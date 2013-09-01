@@ -40,6 +40,7 @@
 		22601B5916BA209F00A807CB /* UISliderSpec+Spec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22601B5816BA209F00A807CB /* UISliderSpec+Spec.mm */; };
 		22601B5B16BA263A00A807CB /* UIKit+PivotalSpecHelper.h in Copy headers to framework */ = {isa = PBXBuildFile; fileRef = 22601B5A16BA263A00A807CB /* UIKit+PivotalSpecHelper.h */; };
 		22601B5C16BA274B00A807CB /* UISlider+Spec.h in Copy headers to framework */ = {isa = PBXBuildFile; fileRef = 22601B4D16BA202A00A807CB /* UISlider+Spec.h */; };
+		AE1FBEA317D15A4100B0F03B /* UITableViewCellSpec+Spec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE1FBEA217D15A4100B0F03B /* UITableViewCellSpec+Spec.mm */; };
 		AE3847AD168BA0E300C99B55 /* AWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3847A7168BA0B300C99B55 /* AWebViewController.m */; };
 		AE3847AE168BA0E300C99B55 /* AWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE3847A8168BA0B300C99B55 /* AWebViewController.xib */; };
 		AE3847AF168BA11D00C99B55 /* logo-small.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3847AA168BA0B300C99B55 /* logo-small.png */; };
@@ -50,6 +51,10 @@
 		AE3847B8168BA3B500C99B55 /* UIImage+PivotalCore.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBCCBD0168B96C80056EE83 /* UIImage+PivotalCore.m */; };
 		AE3847B9168BA3B500C99B55 /* UIView+PivotalCore.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBCCBD2168B96C80056EE83 /* UIView+PivotalCore.m */; };
 		AE3847BD168BACEB00C99B55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBCCC39168B99ED0056EE83 /* CoreGraphics.framework */; };
+		AE7B279617CFD67600904F64 /* UIViewControllerSpec+Spec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE7B279517CFD67600904F64 /* UIViewControllerSpec+Spec.mm */; };
+		AE86BD42179C7C910057DEAE /* UITabBarController+Spec.h in Copy headers to framework */ = {isa = PBXBuildFile; fileRef = AE86BD40179C7C910057DEAE /* UITabBarController+Spec.h */; };
+		AE86BD43179C7C910057DEAE /* UITabBarController+Spec.m in Sources */ = {isa = PBXBuildFile; fileRef = AE86BD41179C7C910057DEAE /* UITabBarController+Spec.m */; };
+		AE86BD4E179C7DAD0057DEAE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE86BD4D179C7DAD0057DEAE /* Default-568h@2x.png */; };
 		AEBCCC25168B999F0056EE83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBCCBE7168B97DD0056EE83 /* Foundation.framework */; };
 		AEBCCC37168B99ED0056EE83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBCCC36168B99ED0056EE83 /* UIKit.framework */; };
 		AEBCCC38168B99ED0056EE83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBCCBE7168B97DD0056EE83 /* Foundation.framework */; };
@@ -77,6 +82,7 @@
 		AEC40CCB174C292600474D2D /* UIWebView+Spec.h in Copy headers to framework */ = {isa = PBXBuildFile; fileRef = AEC40CB3174C22BD00474D2D /* UIWebView+Spec.h */; };
 		AEC40CCC174C292600474D2D /* UIKit+PivotalSpecHelperStubs.h in Copy headers to framework */ = {isa = PBXBuildFile; fileRef = AEC40CB9174C230800474D2D /* UIKit+PivotalSpecHelperStubs.h */; };
 		AEC6D7FE16963F3500E10C7B /* UIControlSpec+Spec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AEC6D7FD16963F3500E10C7B /* UIControlSpec+Spec.mm */; };
+		AED4BE441780C8C800390AFD /* UITabBarControllerSpec+Spec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AED4BE431780C8C800390AFD /* UITabBarControllerSpec+Spec.mm */; };
 		B866FC1A16B4957500317E32 /* UIControl+Spec.h in Copy headers to framework */ = {isa = PBXBuildFile; fileRef = AEBCCC75168B9B5F0056EE83 /* UIControl+Spec.h */; };
 		B866FC1B16B4957500317E32 /* UIImage+Spec.h in Copy headers to framework */ = {isa = PBXBuildFile; fileRef = AEBCCC77168B9B5F0056EE83 /* UIImage+Spec.h */; };
 		B866FC1C16B4957500317E32 /* UITableViewCell+Spec.h in Copy headers to framework */ = {isa = PBXBuildFile; fileRef = AEBCCC79168B9B5F0056EE83 /* UITableViewCell+Spec.h */; };
@@ -213,6 +219,7 @@
 				AEC40CCA174C292600474D2D /* UIAlertView+Spec.h in Copy headers to framework */,
 				AEC40CCB174C292600474D2D /* UIWebView+Spec.h in Copy headers to framework */,
 				AEC40CCC174C292600474D2D /* UIKit+PivotalSpecHelperStubs.h in Copy headers to framework */,
+				AE86BD42179C7C910057DEAE /* UITabBarController+Spec.h in Copy headers to framework */,
 			);
 			name = "Copy headers to framework";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,12 +249,17 @@
 		22601B4E16BA202A00A807CB /* UISlider+Spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+Spec.m"; sourceTree = "<group>"; };
 		22601B5816BA209F00A807CB /* UISliderSpec+Spec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UISliderSpec+Spec.mm"; sourceTree = "<group>"; };
 		22601B5A16BA263A00A807CB /* UIKit+PivotalSpecHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+PivotalSpecHelper.h"; sourceTree = "<group>"; };
+		AE1FBEA217D15A4100B0F03B /* UITableViewCellSpec+Spec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UITableViewCellSpec+Spec.mm"; sourceTree = "<group>"; };
 		AE3847A4168B9DF700C99B55 /* UIKitMatchers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKitMatchers.h; sourceTree = "<group>"; };
 		AE3847A6168BA0B300C99B55 /* AWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWebViewController.h; sourceTree = "<group>"; };
 		AE3847A7168BA0B300C99B55 /* AWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWebViewController.m; sourceTree = "<group>"; };
 		AE3847A8168BA0B300C99B55 /* AWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AWebViewController.xib; sourceTree = "<group>"; };
 		AE3847AA168BA0B300C99B55 /* logo-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-small.png"; sourceTree = "<group>"; };
 		AE3847AB168BA0B300C99B55 /* pivotallabs-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pivotallabs-logo.png"; sourceTree = "<group>"; };
+		AE7B279517CFD67600904F64 /* UIViewControllerSpec+Spec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIViewControllerSpec+Spec.mm"; sourceTree = "<group>"; };
+		AE86BD40179C7C910057DEAE /* UITabBarController+Spec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Spec.h"; sourceTree = "<group>"; };
+		AE86BD41179C7C910057DEAE /* UITabBarController+Spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Spec.m"; sourceTree = "<group>"; };
+		AE86BD4D179C7DAD0057DEAE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		AEBCCBCD168B96C80056EE83 /* UIBarButtonItem+Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Button.h"; sourceTree = "<group>"; };
 		AEBCCBCE168B96C80056EE83 /* UIBarButtonItem+Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Button.m"; sourceTree = "<group>"; };
 		AEBCCBCF168B96C80056EE83 /* UIImage+PivotalCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PivotalCore.h"; sourceTree = "<group>"; };
@@ -287,6 +299,7 @@
 		AEC40CBE174C24CF00474D2D /* UIAlertViewSpec+Spec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIAlertViewSpec+Spec.mm"; sourceTree = "<group>"; };
 		AEC40CBF174C24CF00474D2D /* UIWebViewSpec+Spec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIWebViewSpec+Spec.mm"; sourceTree = "<group>"; };
 		AEC6D7FD16963F3500E10C7B /* UIControlSpec+Spec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIControlSpec+Spec.mm"; sourceTree = "<group>"; };
+		AED4BE431780C8C800390AFD /* UITabBarControllerSpec+Spec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UITabBarControllerSpec+Spec.mm"; sourceTree = "<group>"; };
 		B8C62E6B16BC03420009CDAD /* UIBarButtonItem+Spec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Spec.h"; sourceTree = "<group>"; };
 		B8C62E6C16BC03420009CDAD /* UIBarButtonItem+Spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Spec.m"; sourceTree = "<group>"; };
 		B8C62E6E16BC04230009CDAD /* UIBarButtonItemSpec+Spec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIBarButtonItemSpec+Spec.mm"; sourceTree = "<group>"; };
@@ -416,6 +429,7 @@
 				AEBCCC90168B9C530056EE83 /* Extensions */,
 				AE3847A5168BA07C00C99B55 /* Fixtures */,
 				AEC40CBD174C24CF00474D2D /* Stubs */,
+				AE86BD4D179C7DAD0057DEAE /* Default-568h@2x.png */,
 				AEBCCC97168B9C530056EE83 /* main.m */,
 			);
 			path = Spec;
@@ -479,6 +493,8 @@
 				AEBCCC78168B9B5F0056EE83 /* UIImage+Spec.m */,
 				22601B4D16BA202A00A807CB /* UISlider+Spec.h */,
 				22601B4E16BA202A00A807CB /* UISlider+Spec.m */,
+				AE86BD40179C7C910057DEAE /* UITabBarController+Spec.h */,
+				AE86BD41179C7C910057DEAE /* UITabBarController+Spec.m */,
 				AEBCCC79168B9B5F0056EE83 /* UITableViewCell+Spec.h */,
 				AEBCCC7A168B9B5F0056EE83 /* UITableViewCell+Spec.m */,
 				AEBCCC7B168B9B5F0056EE83 /* UIView+Spec.h */,
@@ -496,6 +512,8 @@
 				AEBCCC93168B9C530056EE83 /* UIImage+PivotalCoreSpec.mm */,
 				AEBCCC94168B9C530056EE83 /* UIImageSpec+Spec.mm */,
 				22601B5816BA209F00A807CB /* UISliderSpec+Spec.mm */,
+				AE1FBEA217D15A4100B0F03B /* UITableViewCellSpec+Spec.mm */,
+				AED4BE431780C8C800390AFD /* UITabBarControllerSpec+Spec.mm */,
 				AEBCCC95168B9C530056EE83 /* UIView+PivotalCoreSpec.mm */,
 			);
 			path = Extensions;
@@ -520,6 +538,7 @@
 			children = (
 				AEC40CBE174C24CF00474D2D /* UIAlertViewSpec+Spec.mm */,
 				AEC40CBF174C24CF00474D2D /* UIWebViewSpec+Spec.mm */,
+				AE7B279517CFD67600904F64 /* UIViewControllerSpec+Spec.mm */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -703,6 +722,7 @@
 				AE3847AE168BA0E300C99B55 /* AWebViewController.xib in Resources */,
 				AE3847AF168BA11D00C99B55 /* logo-small.png in Resources */,
 				AE3847B0168BA11D00C99B55 /* pivotallabs-logo.png in Resources */,
+				AE86BD4E179C7DAD0057DEAE /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,6 +803,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEBCCC99168B9C530056EE83 /* UIBarButtonItem+ButtonSpec.mm in Sources */,
+				AE1FBEA317D15A4100B0F03B /* UITableViewCellSpec+Spec.mm in Sources */,
 				AEBCCC9A168B9C530056EE83 /* UIImage+PivotalCoreSpec.mm in Sources */,
 				AEBCCC9B168B9C530056EE83 /* UIImageSpec+Spec.mm in Sources */,
 				AEBCCC9C168B9C530056EE83 /* UIView+PivotalCoreSpec.mm in Sources */,
@@ -794,6 +815,8 @@
 				B8C62E7216BC04940009CDAD /* Target.m in Sources */,
 				AEC40CC0174C24CF00474D2D /* UIAlertViewSpec+Spec.mm in Sources */,
 				AEC40CC1174C24CF00474D2D /* UIWebViewSpec+Spec.mm in Sources */,
+				AED4BE441780C8C800390AFD /* UITabBarControllerSpec+Spec.mm in Sources */,
+				AE7B279617CFD67600904F64 /* UIViewControllerSpec+Spec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,6 +841,7 @@
 				AEC40CB6174C22BD00474D2D /* UIAlertView+Spec.m in Sources */,
 				AEC40CB7174C22BD00474D2D /* UIViewController+Spec.m in Sources */,
 				AEC40CB8174C22BD00474D2D /* UIWebView+Spec.m in Sources */,
+				AE86BD43179C7C910057DEAE /* UITabBarController+Spec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1126,6 +1150,7 @@
 				AEC40C94174C203700474D2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEC40CC3174C283400474D2D /* Build configuration list for PBXAggregateTarget "UIKit+PivotalSpecHelperStubs-iOS" */ = {
 			isa = XCConfigurationList;
@@ -1134,6 +1159,7 @@
 				AEC40CC5174C283400474D2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B866FC0A16B48C8200317E32 /* Build configuration list for PBXAggregateTarget "UIKit+PivotalSpecHelper-iOS" */ = {
 			isa = XCConfigurationList;
